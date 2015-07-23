@@ -3,7 +3,11 @@
 
   App.IndexRoute = Ember.Route.extend({
     model: function() {
-      return [ 'red', 'yellow', 'blue' ];
+      return [
+        { id: 1, name: 'red' },
+        { id: 2, name: 'yellow' },
+        { id: 3, name: 'blue' }
+      ];
     }
   });
 }());

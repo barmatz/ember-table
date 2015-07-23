@@ -1,0 +1,22 @@
+{
+  "name": "ember-table",
+  "version": "0.0.0",
+  "description": "An Ember.js table component",
+  "homepage": "https://github.com/barmatz/ember-table",
+  "author": {
+    "name": "Or Barmatz",
+    "email": "barmatzor@gmail.com"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.13.5",
+    "handlebars": "~3.0.3"
+  }
+}

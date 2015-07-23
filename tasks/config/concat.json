@@ -1,0 +1,26 @@
+{
+  "src": {
+    "files": {
+      "./.tmp/scripts/app.js": [
+        "./src/scripts/initilizers/**/*",
+        "./src/scripts/application.js",
+        "./src/scripts/mixins/**/*",
+        "./src/scripts/adapters/**/*",
+        "./src/scripts/models/**/*",
+        "./src/scripts/routes/**/*",
+        "./src/scripts/controllers/**/*",
+        "./src/scripts/components/**/*",
+        "./src/scripts/helpers/**/*",
+        "./src/scripts/**/*"
+      ]
+    }
+  },
+  "app": {
+    "files": {
+      "./lib/scripts/app.js": [
+        "./.tmp/scripts/templates.js",
+        "./.tmp/scripts/app.js"
+      ]
+    }
+  }
+}

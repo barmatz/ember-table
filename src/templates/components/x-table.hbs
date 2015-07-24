@@ -1,8 +1,19 @@
-<thead>
-  {{x-table-head content=content}}
-</thead>
-<tbody>
-  {{#each content as |row|}}
-    {{x-table-row content=row}}
-  {{/each}}
-</tbody>
+<div>
+  <button disabled={{isFirstPage}} {{action "prevPage"}}>prev</button>
+  <button disabled={{isLastPage}} {{action "nextPage"}}>next</button>
+</div>
+<table>
+  <thead>
+    {{x-table-head content=content}}
+  </thead>
+  <tbody>
+    {{#each pagedContent as |row|}}
+      {{x-table-row content=row}}
+    {{/each}}
+  </tbody>
+</table>
+<div>
+  items per page: {{itemsPerPage}}
+  current page: {{currentPage}}
+  total pages: {{totalPages}}
+</div>

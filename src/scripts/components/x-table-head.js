@@ -13,7 +13,11 @@
             value = [ value ];
           }
 
-          value = Object.keys(value[0]);
+          if (value.length > 0) {
+            value = Object.keys(value[0]);
+          } else {
+            value = null;
+          }
         }
 
         this.set('_content', value);
